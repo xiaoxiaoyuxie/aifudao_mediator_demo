@@ -9812,7 +9812,7 @@
 				000000009D70 /* ResourceBundle-HFSFDCommon-Info.plist */,
 			);
 			name = "Support Files";
-			path = "../aifudao-baseModule/Pods/Target Support Files/HFSFDCommon";
+			path = "../aifudao_mediator_demo/Pods/Target Support Files/HFSFDCommon";
 			sourceTree = "<group>";
 		};
 		000000009F40 /* Support Files */ = {
@@ -10011,7 +10011,7 @@
 				000000011A70 /* YXFuDaoModule-prefix.pch */,
 			);
 			name = "Support Files";
-			path = "../../aifudao-baseModule/Pods/Target Support Files/YXFuDaoModule";
+			path = "../../aifudao_mediator_demo/Pods/Target Support Files/YXFuDaoModule";
 			sourceTree = "<group>";
 		};
 		000000011BA0 /* Support Files */ = {

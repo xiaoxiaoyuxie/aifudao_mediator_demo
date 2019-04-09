@@ -1,6 +1,0 @@
-framework module HFSFDCommon {
-  umbrella header "HFSFDCommon-umbrella.h"
-
-  export *
-  module * { export * }
-}

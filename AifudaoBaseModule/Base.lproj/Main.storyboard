@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="yDP-ef-cP1">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="yDP-ef-cP1">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Item-->
+        <!--课前模块-->
         <scene sceneID="tne-QT-ifu">
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="YXOneToOneFuDaoViewController" sceneMemberID="viewController">
@@ -22,7 +22,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item" id="1Ms-6B-RaV"/>
+                    <tabBarItem key="tabBarItem" title="课前模块" id="1Ms-6B-RaV"/>
                     <navigationItem key="navigationItem" id="Fai-gF-jmH"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -50,7 +50,7 @@
             </objects>
             <point key="canvasLocation" x="15" y="926"/>
         </scene>
-        <!--Item-->
+        <!--费用模块-->
         <scene sceneID="yK4-Vb-5iD">
             <objects>
                 <viewController id="Si5-DU-6O1" customClass="YXBalanceViewController" sceneMemberID="viewController">
@@ -63,18 +63,18 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item" id="L7k-Nd-CvB"/>
+                    <tabBarItem key="tabBarItem" title="费用模块" id="L7k-Nd-CvB"/>
                     <navigationItem key="navigationItem" id="MQt-BS-Y3d"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1qm-Z3-xy2" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="3249" y="958"/>
         </scene>
-        <!--Item-->
+        <!--费用模块-->
         <scene sceneID="4Oy-Zz-5kc">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="e8Z-lp-ebO" customClass="YYQBaseNavigationController" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" id="4tR-2h-2zA"/>
+                    <tabBarItem key="tabBarItem" title="费用模块" id="4tR-2h-2zA"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="xH1-rf-IoD">
                         <rect key="frame" x="0.0" y="20" width="375" height="44"/>
@@ -89,7 +89,7 @@
             </objects>
             <point key="canvasLocation" x="1409" y="925"/>
         </scene>
-        <!--Item-->
+        <!--辅导SDK-->
         <scene sceneID="X3q-vf-gZg">
             <objects>
                 <viewController id="g5a-PD-T16" customClass="ViewController" sceneMemberID="viewController">
@@ -112,7 +112,7 @@
                             <constraint firstItem="atb-0G-niM" firstAttribute="centerY" secondItem="Woa-Cb-bLo" secondAttribute="centerY" id="QaS-ac-Zx7"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item" id="18p-EB-SJC"/>
+                    <tabBarItem key="tabBarItem" title="辅导SDK" id="18p-EB-SJC"/>
                     <navigationItem key="navigationItem" id="xoX-n0-ypa"/>
                     <connections>
                         <outlet property="checkDeviceButton" destination="atb-0G-niM" id="BkC-5Y-TZw"/>
@@ -122,11 +122,11 @@
             </objects>
             <point key="canvasLocation" x="3248.8000000000002" y="1781.5592203898052"/>
         </scene>
-        <!--Item-->
+        <!--辅导SDK-->
         <scene sceneID="KGZ-TA-hOG">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="AyZ-P5-Pjd" customClass="YYQBaseNavigationController" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" id="635-jb-qXi"/>
+                    <tabBarItem key="tabBarItem" title="辅导SDK" id="635-jb-qXi"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="H8T-zY-tTQ">
                         <rect key="frame" x="0.0" y="20" width="375" height="44"/>
@@ -141,11 +141,11 @@
             </objects>
             <point key="canvasLocation" x="1409" y="1782"/>
         </scene>
-        <!--Item-->
+        <!--课前模块-->
         <scene sceneID="zTq-wy-U08">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="L8p-Br-Uy8" customClass="YYQBaseNavigationController" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" id="hHk-C4-23j"/>
+                    <tabBarItem key="tabBarItem" title="课前模块" id="hHk-C4-23j"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="asL-hT-ujm">
                         <rect key="frame" x="0.0" y="20" width="375" height="44"/>
