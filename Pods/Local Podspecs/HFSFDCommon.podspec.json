@@ -1,0 +1,76 @@
+{
+  "name": "HFSFDCommon",
+  "version": "0.1.0",
+  "summary": "A short description of HFSFDCommon.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "git@git.iyunxiao.com:woz/HFSFDCommon.git",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "HedyZhang": "zhanghadi@iyunxiao.com"
+  },
+  "source": {
+    "git": "git@git.iyunxiao.com:woz/HFSFDCommon.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "8.0"
+  },
+  "swift_version": "4.0",
+  "subspecs": [
+    {
+      "name": "Core",
+      "source_files": [
+        "HFSFDCommon/Classes/FDFullscreenPopGesture/**/*.{h,m}",
+        "HFSFDCommon/Classes/TTTAttributedLabel/**/*.{h,m}",
+        "HFSFDCommon/Classes/YXViewDebugger/**/*.{h,m}"
+      ],
+      "resource_bundles": {
+        "HFSFDCommon": [
+          "HFSFDCommon/Classes/**/*.{storyboard,xib,png,plist,json,der}",
+          "HFSFDCommon/Assets/**/*.{png,plist,json,der}"
+        ]
+      },
+      "prefix_header_file": "HFSFDCommon/Classes/HFSFDCommon.h"
+    },
+    {
+      "name": "FuDao",
+      "dependencies": {
+        "HFSFDCommon/Core": [
+
+        ]
+      },
+      "pod_target_xcconfig": {
+        "GCC_PREPROCESSOR_DEFINITIONS": "HFSFD_COMMON_FD_H=1"
+      },
+      "user_target_xcconfig": {
+        "GCC_PREPROCESSOR_DEFINITIONS": "HFSFD_COMMON_FD_H=1"
+      }
+    },
+    {
+      "name": "HaoFenShu",
+      "dependencies": {
+        "HFSFDCommon/Core": [
+
+        ],
+        "SSZipArchive": [
+          "1.8.1"
+        ]
+      },
+      "source_files": [
+        "HFSFDCommon/Classes/FPS/**/*.{h,m}",
+        "HFSFDCommon/Classes/NullSafe/**/*.{h,m}",
+        "HFSFDCommon/Classes/YXLogDebugger/**/*.{h,m}",
+        "HFSFDCommon/Classes/netfox/**/*.{h,m,swift}"
+      ],
+      "pod_target_xcconfig": {
+        "GCC_PREPROCESSOR_DEFINITIONS": "HFSFD_COMMON_HFS_H=1"
+      },
+      "user_target_xcconfig": {
+        "GCC_PREPROCESSOR_DEFINITIONS": "HFSFD_COMMON_HFS_H=1"
+      }
+    }
+  ]
+}

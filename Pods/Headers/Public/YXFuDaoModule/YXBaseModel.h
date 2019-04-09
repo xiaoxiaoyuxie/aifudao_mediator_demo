@@ -1,0 +1,1 @@
+../../../../../aifudao-base/YXFuDaoModule/YXFuDaoModule/Classes/FudaoBase/BaseClass/Model/YXBaseModel.h

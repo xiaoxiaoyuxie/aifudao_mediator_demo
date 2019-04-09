@@ -1,0 +1,118 @@
+#ifdef __OBJC__
+#import <UIKit/UIKit.h>
+#else
+#ifndef FOUNDATION_EXPORT
+#if defined(__cplusplus)
+#define FOUNDATION_EXPORT extern "C"
+#else
+#define FOUNDATION_EXPORT extern
+#endif
+#endif
+#endif
+
+//
+//  PrefixHeader.h
+//  AifudaoiPhone
+//
+//  Created by yangyongqiang on 2017/11/6.
+//
+
+#ifdef __OBJC__
+
+#ifndef PrefixHeader_h
+#define PrefixHeader_h
+
+#define WEAKSELF __weak __typeof(&*self)weakSelf = self;
+
+#define kAppdelegate ([UIApplication sharedApplication].delegate)
+
+#define kYXFDBaseBundle [NSBundle bundleWithURL:[[NSBundle bundleForClass:NSClassFromString(@"YXBaseModel")] URLForResource:@"YXFuDaoModule" withExtension:@"bundle"]]
+
+#define kBorderWidth (1.f / [UIScreen mainScreen].scale) < 0.5 ? 0.5 : (1.f / [UIScreen mainScreen].scale)
+
+#pragma clang diagnostic ignored "-Wdeprecated-declarations"
+
+#import "EnumDefine.h"
+#import "YXConstantConfig.h"
+#import "YXLogEventAction.h"
+#import "YXCache.h"
+#import "YXSpec.h"
+#import "YXKeys.h"
+#import "YXDataFilePath.h"
+#import "YXNotificationNames.h"
+#import "UIView+CLKAddition.h"
+#import "UIView+QSBExtension.h"
+#import "NSDate+YXStringFormat.h"
+#import "NSDate+YXFDAdditions.h"
+#import "UIButton+FDMargin.h"
+#import "UIImage+FDBundleImage.h"
+#import "UIImageView+YXWebImage.h"
+
+#import <Masonry/Masonry.h>
+#import <YYModel/YYModel.h>
+#import <YYText/YYText.h>
+
+#import <YYCategories/YYCategories.h>
+#import <IQKeyboardManager/IQKeyboardManager.h>
+
+#import "YXBaseModel.h"
+
+#import "YXFDAlertView.h"
+#import "YXNetManager.h"
+
+#import "YYQBaseViewController.h"
+#import "YYQBaseTableViewController.h"
+#import "YYQBaseCollectionViewController.h"
+#import "YYQBaseNavigationController.h"
+
+#import "YXMediator+FudaoSDK_Actions.h"
+#import "YXMediator+IM_Actions.h"
+#import "YXMediator+User_Actions.h"
+#import "YXMediator+Homework_Actions.h"
+#import "YXMediator+ChargeAccount_Actions.h"
+#import "YXMediator+AfterLesson_Actions.h"
+#import "YXMediator+BeforeLesson_Actions.h"
+
+#import "ApplicationManager.h"
+#import "RootVCManager.h"
+#import "WKWebViewController.h"
+
+#import "UserInfoManager.h"
+
+//NSUserDefaults 实例化
+/**
+ *  以key,value存储信息
+ */
+#define USERDEFAULTSET(key,value) [[NSUserDefaults standardUserDefaults] setObject:value forKey:key]
+/**
+ *  以key取出value
+ */
+#define USERDEFAULTS(key) [[NSUserDefaults standardUserDefaults] objectForKey:key]
+
+/**
+ *  以key删除value
+ */
+#define USERDEFAULTREMOVE(key) [[NSUserDefaults standardUserDefaults] removeObjectForKey:key]
+/**
+ *  立即同步
+ */
+#define USERDEFAULTSYNCHRONIZE  [[NSUserDefaults standardUserDefaults] synchronize]
+
+#endif /* PrefixHeader_h */
+
+#endif
+//
+//  YXFudaoSDKHeader.h
+//  Pods
+//
+//  Created by 永强 on 2019/3/29.
+//
+
+#ifdef __OBJC__
+#ifndef YXFudaoSDKHeader_h
+#define YXFudaoSDKHeader_h
+
+#import "FudaoManager.h"
+
+#endif /* YXFudaoSDKHeader_h */
+#endif /* __OBJC__ */

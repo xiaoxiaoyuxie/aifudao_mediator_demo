@@ -1,0 +1,1 @@
+../../../../../aifudao-base/YXFuDaoModule/YXFuDaoModule/Classes/FudaoSDK/FudaoCore/TCPNetLib/Protos/fudao/fudaoreg/Fudaoreg.pbobjc.h

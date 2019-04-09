@@ -1,0 +1,399 @@
+{
+  "name": "YXFuDaoModule",
+  "version": "2.11.0",
+  "summary": "YXFuDaoModule",
+  "description": "YXFuDaoModule",
+  "homepage": "git@git.iyunxiao.com:woz/aifudao.git",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "woz": "woz"
+  },
+  "source": {
+    "git": "git@git.iyunxiao.com:woz/aifudao.git",
+    "tag": "2.11.0"
+  },
+  "platforms": {
+    "ios": "8.0"
+  },
+  "default_subspecs": "FudaoBase",
+  "subspecs": [
+    {
+      "name": "FudaoBase",
+      "frameworks": [
+        "UIKit",
+        "Foundation",
+        "SystemConfiguration",
+        "Security",
+        "AudioToolbox",
+        "CoreAudio",
+        "CoreFoundation",
+        "CoreGraphics",
+        "CoreMotion",
+        "CFNetwork"
+      ],
+      "ios": {
+        "libraries": [
+          "z",
+          "c++",
+          "c",
+          "c++abi",
+          "stdc++",
+          "iconv"
+        ]
+      },
+      "dependencies": {
+        "HFSFDCommon/FuDao": [
+
+        ],
+        "AFNetworking": [
+
+        ],
+        "FDStackView": [
+
+        ],
+        "Masonry": [
+
+        ],
+        "YYModel": [
+
+        ],
+        "YYText": [
+
+        ],
+        "YYImage": [
+
+        ],
+        "YYCategories": [
+
+        ],
+        "UITableView+FDTemplateLayoutCell": [
+
+        ],
+        "MJRefresh": [
+
+        ],
+        "IQKeyboardManager": [
+
+        ],
+        "MBProgressHUD": [
+
+        ],
+        "DZNEmptyDataSet": [
+
+        ],
+        "PPNetworkHelper": [
+
+        ],
+        "SDWebImage": [
+          "4.4.6"
+        ],
+        "CTMediator": [
+
+        ],
+        "MZFormSheetPresentationController": [
+
+        ],
+        "HMSegmentedControl": [
+          "~> 1.5.5"
+        ],
+        "TZImagePickerController": [
+
+        ],
+        "SwipeView": [
+          "~> 1.3.2"
+        ],
+        "Bugly": [
+          "~> 2.4.7"
+        ],
+        "UMCAnalytics": [
+          "~> 5.5.0"
+        ],
+        "UMCCommon": [
+          "~> 1.5.0"
+        ],
+        "AlipaySDK-iOS": [
+
+        ],
+        "WechatOpenSDK": [
+          "~> 1.8.3"
+        ],
+        "JPush": [
+
+        ],
+        "LKDBHelper": [
+          "~> 2.5.1"
+        ],
+        "QMLineSDK": [
+
+        ]
+      },
+      "source_files": "YXFuDaoModule/Classes/FudaoBase/**/*",
+      "prefix_header_file": "YXFuDaoModule/Classes/FudaoBase/YXFDPrefixHeader.h",
+      "pod_target_xcconfig": {
+        "OTHER_LDFLAGS": "-ObjC -lc++ -lz -lsqlite3 -framework UMAnalytics -framework UMCommon -framework Bugly -l WeChatSDK -framework AliPaySDK -framework QMLineSDK",
+        "WARNING_CFLAGS": "-Wno-nullability-completeness -Wno-documentation"
+      },
+      "resource_bundles": {
+        "YXFuDaoModule": [
+          "YXFuDaoModule/Assets/Common/*"
+        ]
+      }
+    },
+    {
+      "name": "AfterLesson",
+      "source_files": "YXFuDaoModule/Classes/AfterLesson/**/*",
+      "dependencies": {
+        "YXFuDaoModule/FudaoBase": [
+
+        ]
+      },
+      "pod_target_xcconfig": {
+        "GCC_PREPROCESSOR_DEFINITIONS": "FUDAO_A_LESSON_SUPPORT=1"
+      },
+      "user_target_xcconfig": {
+        "GCC_PREPROCESSOR_DEFINITIONS": "FUDAO_A_LESSON_SUPPORT=1"
+      }
+    },
+    {
+      "name": "BeforeLesson",
+      "dependencies": {
+        "YXFuDaoModule/FudaoBase": [
+
+        ],
+        "FSCalendar": [
+
+        ]
+      },
+      "source_files": "YXFuDaoModule/Classes/BeforeLesson/**/*",
+      "pod_target_xcconfig": {
+        "GCC_PREPROCESSOR_DEFINITIONS": "FUDAO_B_LESSON_SUPPORT=1"
+      },
+      "user_target_xcconfig": {
+        "GCC_PREPROCESSOR_DEFINITIONS": "FUDAO_B_LESSON_SUPPORT=1"
+      }
+    },
+    {
+      "name": "ChargeAccount",
+      "source_files": "YXFuDaoModule/Classes/ChargeAccount/**/*",
+      "dependencies": {
+        "YXFuDaoModule/FudaoBase": [
+
+        ],
+        "AlipaySDK-iOS": [
+
+        ],
+        "WechatOpenSDK": [
+          "~> 1.8.3"
+        ]
+      },
+      "pod_target_xcconfig": {
+        "OTHER_LDFLAGS": "-ObjC -lc++ -lz -lsqlite3 -l WeChatSDK -framework AliPaySDK",
+        "GCC_PREPROCESSOR_DEFINITIONS": "FUDAO_C_ACCOUNT_SUPPORT=1"
+      },
+      "user_target_xcconfig": {
+        "GCC_PREPROCESSOR_DEFINITIONS": "FUDAO_C_ACCOUNT_SUPPORT=1"
+      }
+    },
+    {
+      "name": "Homework",
+      "source_files": "YXFuDaoModule/Classes/Homework/**/*",
+      "dependencies": {
+        "YXFuDaoModule/FudaoBase": [
+
+        ]
+      },
+      "pod_target_xcconfig": {
+        "GCC_PREPROCESSOR_DEFINITIONS": "FUDAO_HOMEWORK_SUPPORT=1"
+      },
+      "user_target_xcconfig": {
+        "GCC_PREPROCESSOR_DEFINITIONS": "FUDAO_HOMEWORK_SUPPORT=1"
+      }
+    },
+    {
+      "name": "IM",
+      "source_files": "YXFuDaoModule/Classes/IM/**/*",
+      "dependencies": {
+        "YXFuDaoModule/FudaoBase": [
+
+        ],
+        "CocoaAsyncSocket": [
+
+        ],
+        "Protobuf": [
+
+        ]
+      },
+      "pod_target_xcconfig": {
+        "GCC_PREPROCESSOR_DEFINITIONS": "FUDAO_IM_SUPPORT=1"
+      },
+      "user_target_xcconfig": {
+        "GCC_PREPROCESSOR_DEFINITIONS": "FUDAO_IM_SUPPORT=1"
+      }
+    },
+    {
+      "name": "FudaoSDK",
+      "source_files": "YXFuDaoModule/Classes/FudaoSDK/**/*",
+      "dependencies": {
+        "YXFuDaoModule/FudaoBase": [
+
+        ],
+        "CocoaAsyncSocket": [
+
+        ],
+        "Protobuf": [
+
+        ]
+      },
+      "prefix_header_file": "YXFuDaoModule/Classes/FudaoSDK/YXFudaoSDKHeader.h",
+      "exclude_files": "YXFuDaoModule/Classes/FudaoSDK/FudaoCore/TCPNetLib/Protos/**/*",
+      "requires_arc": true,
+      "pod_target_xcconfig": {
+        "GCC_PREPROCESSOR_DEFINITIONS": "GPB_USE_PROTOBUF_FRAMEWORK_IMPORTS=1 FUDAO_SDK_SUPPORT=1"
+      },
+      "user_target_xcconfig": {
+        "GCC_PREPROCESSOR_DEFINITIONS": "GPB_USE_PROTOBUF_FRAMEWORK_IMPORTS=1 FUDAO_SDK_SUPPORT=1"
+      },
+      "subspecs": [
+        {
+          "name": "MRCFile",
+          "requires_arc": false,
+          "source_files": "YXFuDaoModule/Classes/FudaoSDK/FudaoCore/TCPNetLib/Protos/**/*"
+        }
+      ]
+    },
+    {
+      "name": "User",
+      "source_files": "YXFuDaoModule/Classes/User/**/*",
+      "dependencies": {
+        "YXFuDaoModule/FudaoBase": [
+
+        ],
+        "SAMKeychain": [
+
+        ],
+        "QMLineSDK": [
+
+        ]
+      },
+      "pod_target_xcconfig": {
+        "OTHER_LDFLAGS": "-ObjC -lc++ -lz -lsqlite3 -framework QMLineSDK",
+        "GCC_PREPROCESSOR_DEFINITIONS": "FUDAO_USER_SUPPORT=1"
+      },
+      "user_target_xcconfig": {
+        "GCC_PREPROCESSOR_DEFINITIONS": "FUDAO_USER_SUPPORT=1"
+      }
+    },
+    {
+      "name": "BusinessForFudao",
+      "dependencies": {
+        "YXFuDaoModule/User": [
+
+        ],
+        "YXFuDaoModule/FudaoSDK": [
+
+        ],
+        "YXFuDaoModule/IM": [
+
+        ],
+        "YXFuDaoModule/Homework": [
+
+        ],
+        "YXFuDaoModule/ChargeAccount": [
+
+        ],
+        "YXFuDaoModule/BeforeLesson": [
+
+        ],
+        "YXFuDaoModule/AfterLesson": [
+
+        ]
+      },
+      "pod_target_xcconfig": {
+        "GCC_PREPROCESSOR_DEFINITIONS": "THEME_FUDAO=1"
+      },
+      "user_target_xcconfig": {
+        "GCC_PREPROCESSOR_DEFINITIONS": "THEME_FUDAO=1"
+      }
+    },
+    {
+      "name": "BusinessForiPhone",
+      "dependencies": {
+        "YXFuDaoModule/FudaoBase": [
+
+        ]
+      },
+      "pod_target_xcconfig": {
+        "GCC_PREPROCESSOR_DEFINITIONS": "__I_AM_IPHONE__=1 $(inherited)"
+      },
+      "user_target_xcconfig": {
+        "GCC_PREPROCESSOR_DEFINITIONS": "__I_AM_IPHONE__=1 $(inherited)"
+      }
+    },
+    {
+      "name": "BusinessForiPad",
+      "dependencies": {
+        "YXFuDaoModule/FudaoBase": [
+
+        ]
+      },
+      "pod_target_xcconfig": {
+        "GCC_PREPROCESSOR_DEFINITIONS": "__I_AM_IPAD__=1 $(inherited)"
+      },
+      "user_target_xcconfig": {
+        "GCC_PREPROCESSOR_DEFINITIONS": "__I_AM_IPAD__=1 $(inherited)"
+      }
+    },
+    {
+      "name": "BusinessiPhoneForHFS",
+      "dependencies": {
+        "YXFuDaoModule/User": [
+
+        ],
+        "YXFuDaoModule/FudaoSDK": [
+
+        ],
+        "YXFuDaoModule/Homework": [
+
+        ],
+        "YXFuDaoModule/ChargeAccount": [
+
+        ],
+        "YXFuDaoModule/BeforeLesson": [
+
+        ],
+        "YXFuDaoModule/AfterLesson": [
+
+        ]
+      },
+      "pod_target_xcconfig": {
+        "GCC_PREPROCESSOR_DEFINITIONS": "THEME_STUDENT=1 __I_AM_IPHONE__=1 $(inherited)"
+      },
+      "user_target_xcconfig": {
+        "GCC_PREPROCESSOR_DEFINITIONS": "THEME_STUDENT=1 __I_AM_IPHONE__=1 $(inherited)"
+      }
+    },
+    {
+      "name": "BusinessiPhoneForHFSParent",
+      "dependencies": {
+        "YXFuDaoModule/ChargeAccount": [
+
+        ],
+        "YXFuDaoModule/BeforeLesson": [
+
+        ],
+        "YXFuDaoModule/AfterLesson": [
+
+        ]
+      },
+      "pod_target_xcconfig": {
+        "GCC_PREPROCESSOR_DEFINITIONS": "THEME_PARENT=1 __I_AM_IPHONE__=1 $(inherited)"
+      },
+      "user_target_xcconfig": {
+        "GCC_PREPROCESSOR_DEFINITIONS": "THEME_PARENT=1 __I_AM_IPHONE__=1 $(inherited)"
+      }
+    }
+  ]
+}

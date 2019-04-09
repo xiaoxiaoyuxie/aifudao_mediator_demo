@@ -1,0 +1,1 @@
+../../../../../HFSFDCommon/HFSFDCommon/Classes/FDFullscreenPopGesture/UINavigationController+FDFullscreenPopGesture.h

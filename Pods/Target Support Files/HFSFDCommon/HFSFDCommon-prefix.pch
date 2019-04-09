@@ -1,0 +1,48 @@
+#ifdef __OBJC__
+#import <UIKit/UIKit.h>
+#else
+#ifndef FOUNDATION_EXPORT
+#if defined(__cplusplus)
+#define FOUNDATION_EXPORT extern "C"
+#else
+#define FOUNDATION_EXPORT extern
+#endif
+#endif
+#endif
+
+//
+//  HFSFDCommon.h
+//  Pods
+//  好分数&&辅导公用基础库
+//  Created by LuoCangjian on 2019/1/23.
+//
+
+#ifndef HFSFDCommon_h
+#define HFSFDCommon_h
+
+#if __has_include(<HFSFDCommon/HFSFDCommon.h>)
+
+#import <HFSFDCommon/YXDebugViewManager.h>
+#import <HFSFDCommon/UINavigationController+FDFullscreenPopGesture.h>
+#import <HFSFDCommon/TTTAttributedLabel.h>
+
+#ifdef HFSFD_COMMON_HFS_H
+#import <HFSFDCommon/YXLogWebConsoleHttpServer.h>
+#import <HFSFDCommon/YYFPSLabel.h>
+#endif /* HFSFD_COMMON_HFS_H */
+
+#else
+
+#import "YXDebugViewManager.h"
+#import "UINavigationController+FDFullscreenPopGesture.h"
+#import "TTTAttributedLabel.h"
+
+#ifdef HFSFD_COMMON_HFS_H
+#import "YXLogWebConsoleHttpServer.h"
+#import "YYFPSLabel.h"
+#endif /* HFSFD_COMMON_HFS_H */
+
+#endif /* __has_include */
+
+#endif /* HFSFDCommon_h */
+

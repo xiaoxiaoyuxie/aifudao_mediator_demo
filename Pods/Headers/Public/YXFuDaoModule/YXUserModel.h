@@ -1,0 +1,1 @@
+../../../../../aifudao-base/YXFuDaoModule/YXFuDaoModule/Classes/FudaoBase/Managers/UserInfo/UserModel/YXUserModel.h

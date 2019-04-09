@@ -1,0 +1,1 @@
+../../../../../aifudao-base/YXFuDaoModule/YXFuDaoModule/Classes/ChargeAccount/CoursePackage/CoursePackageVc/YXFDLeftCourseViewControllerIpad.h
