@@ -20,6 +20,9 @@
     // 初始化辅导配置
     [ApplicationManager setupFuDaoConfig];
     
+    [YXUserModel loginWithUserName:@"student013" password:@"123456" callBack:^(id value) {
+        NSLog(@"登陆成功");
+    }];
     // Override point for customization after application launch.
     return YES;
 }

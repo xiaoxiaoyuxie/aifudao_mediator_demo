@@ -1,1 +1,0 @@
-../../../../../aifudao-base/YXFuDaoModule/YXFuDaoModule/Classes/IM/Managers/ChatManager.h

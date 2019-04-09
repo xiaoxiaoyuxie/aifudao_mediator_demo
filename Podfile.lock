@@ -52,7 +52,6 @@ PODS:
   - QMLineSDK (3.2.0):
     - FMDB (~> 2.7.5)
     - Qiniu (~> 7.2.5)
-  - SAMKeychain (1.5.3)
   - SDWebImage (4.4.6):
     - SDWebImage/Core (= 4.4.6)
   - SDWebImage/Core (4.4.6)
@@ -68,14 +67,12 @@ PODS:
   - YXFuDaoModule/BeforeLesson (2.11.0):
     - FSCalendar
     - YXFuDaoModule/FudaoBase
-  - YXFuDaoModule/BusinessForFudao (2.11.0):
+  - YXFuDaoModule/BusinessiPhoneForHFS (2.11.0):
     - YXFuDaoModule/AfterLesson
     - YXFuDaoModule/BeforeLesson
     - YXFuDaoModule/ChargeAccount
     - YXFuDaoModule/FudaoSDK
     - YXFuDaoModule/Homework
-    - YXFuDaoModule/IM
-    - YXFuDaoModule/User
   - YXFuDaoModule/ChargeAccount (2.11.0):
     - AlipaySDK-iOS
     - WechatOpenSDK (~> 1.8.3)
@@ -120,14 +117,6 @@ PODS:
     - YXFuDaoModule/FudaoBase
   - YXFuDaoModule/Homework (2.11.0):
     - YXFuDaoModule/FudaoBase
-  - YXFuDaoModule/IM (2.11.0):
-    - CocoaAsyncSocket
-    - Protobuf
-    - YXFuDaoModule/FudaoBase
-  - YXFuDaoModule/User (2.11.0):
-    - QMLineSDK
-    - SAMKeychain
-    - YXFuDaoModule/FudaoBase
   - YYCache (1.0.4)
   - YYCategories (1.0.4):
     - YYCategories/no-arc (= 1.0.4)
@@ -140,7 +129,7 @@ PODS:
 
 DEPENDENCIES:
   - HFSFDCommon/FuDao (from `../HFSFDCommon`)
-  - YXFuDaoModule/BusinessForFudao (from `../aifudao-base/YXFuDaoModule`)
+  - YXFuDaoModule/BusinessiPhoneForHFS (from `../aifudao-base/YXFuDaoModule`)
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
@@ -168,7 +157,6 @@ SPEC REPOS:
     - Protobuf
     - Qiniu
     - QMLineSDK
-    - SAMKeychain
     - SDWebImage
     - SwipeView
     - TZImagePickerController
@@ -214,7 +202,6 @@ SPEC CHECKSUMS:
   Protobuf: 7a877b7f3e5964e3fce995e2eb323dbc6831bb5a
   Qiniu: 909b408ee489ea54827e9717be90b94bc9dfbc48
   QMLineSDK: a7b38731e59b76324a4877bc550d22e4b503e693
-  SAMKeychain: 483e1c9f32984d50ca961e26818a534283b4cd5c
   SDWebImage: 3f3f0c02f09798048c47a5ed0a13f17b063572d8
   SwipeView: bd67cfaf7760c036438446b3ccb28a3b84fce009
   TZImagePickerController: 7850b158d025065b162a1a963d445040b828abc9
@@ -222,13 +209,13 @@ SPEC CHECKSUMS:
   UMCAnalytics: 8449e33b7627ee26f1169202827a8d5a00b5442b
   UMCCommon: 016af43c0f769feb1ae1861d65aaf2b23b89c9c7
   WechatOpenSDK: 9b721089507c895d05f997408c30bb6e6f5f9b60
-  YXFuDaoModule: eb2dff8499ecb9da22dcd3d15c2e1bc54462e2b8
+  YXFuDaoModule: 7a4c013a2d2f7c3451aff8210e2c2d99ffbfd069
   YYCache: 8105b6638f5e849296c71f331ff83891a4942952
   YYCategories: 6bcd4314c6661a561410dce4a793379ebd306abd
   YYImage: 1e1b62a9997399593e4b9c4ecfbbabbf1d3f3b54
   YYModel: 2a7fdd96aaa4b86a824e26d0c517de8928c04b30
   YYText: 5c461d709e24d55a182d1441c41dc639a18a4849
 
-PODFILE CHECKSUM: 43c95e09a9636458ac2af8e4b14d01e2f33182a2
+PODFILE CHECKSUM: dd6706ffc75064cb60de3a8b15f5732c03fe1b9d
 
 COCOAPODS: 1.5.3

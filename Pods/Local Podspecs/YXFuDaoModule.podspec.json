@@ -349,9 +349,6 @@
     {
       "name": "BusinessiPhoneForHFS",
       "dependencies": {
-        "YXFuDaoModule/User": [
-
-        ],
         "YXFuDaoModule/FudaoSDK": [
 
         ],
